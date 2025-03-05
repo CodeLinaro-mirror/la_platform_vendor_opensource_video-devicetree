@@ -18,6 +18,10 @@ dtbo-y += sun-vidc.dtbo
 dtbo-y += sun-vidc-v2.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_YUPIK), y)
+dtbo-y += yupik-vidc.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_TUNA), y)
 dtbo-y += tuna-vidc.dtbo
 endif
