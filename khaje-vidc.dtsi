@@ -86,10 +86,10 @@
 			iommus = <&apps_smmu 0x804 0xE0>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal","stall-disable";
-			virtual-addr-pool = <0x01000000 0x24800000>;
+			qcom,iommu-vmid = <0xB>; /*VMID_CP_NON_PIXEL*/
+			virtual-addr-pool = <0x1000000 0x24800000>;
 			qcom,iova-best-fit;
 			qcom,iova-max-align-shift = <8>; /* 1 MB */
-			virtual-addr-pool = <0x1000000 0x24800000>;
 			qcom,secure-context-bank;
 		};
 
