@@ -54,6 +54,10 @@ ifeq ($(CONFIG_ARCH_RAVELIN), y)
 dtbo-y += ravelin-vidc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_MALABAR), y)
+dtbo-y += malabar-vidc.dtbo
+endif
+
 always-y    := $(dtb-y) $(dtbo-y)
 subdir-y    := $(dts-dirs)
 clean-files    := *.dtb *.dtbo
