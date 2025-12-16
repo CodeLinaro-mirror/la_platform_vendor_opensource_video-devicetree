@@ -1,0 +1,20 @@
+/*
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+
+/dts-v1/;
+/plugin/;
+
+#include <dt-bindings/interrupt-controller/arm-gic.h>
+#include <dt-bindings/clock/qcom,gcc-sm6115.h>
+#include <dt-bindings/interconnect/qcom,bengal.h>
+#include <dt-bindings/clock/qcom,sm6115-gpucc.h>
+#include "khaje-vidc.dtsi"
+
+/ {
+	model = "Qualcomm Technologies, Inc. Bengal SoC";
+	compatible = "qcom,bengal";
+	qcom,msm-id = <444 0x10000>;
+	qcom,board-id = <0 0>;
+};
