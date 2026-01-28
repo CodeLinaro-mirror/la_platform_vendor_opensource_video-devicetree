@@ -22,6 +22,10 @@ ifeq ($(CONFIG_ARCH_YUPIK), y)
 dtbo-y += yupik-vidc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_LAHAINA), y)
+dtbo-y += lahaina-vidc.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_TUNA), y)
 dtbo-y += tuna-vidc.dtbo
 endif
