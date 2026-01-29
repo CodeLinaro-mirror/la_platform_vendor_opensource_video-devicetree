@@ -87,10 +87,9 @@
 
 		secure_non_pixel_cb: secure_non_pixel_cb {
 			compatible = "qcom,vidc,cb-sec-non-pxl";
-			iommus = <&apps_smmu 0x1944 0x0000>;
+			iommus = <&dpd_smmu 0xB>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal";
-			qcom,iommu-vmid = <0xB>; /* VMID_CP_NON_PIXEL */
 			qcom,iova-best-fit;
 			qcom,iova-max-align-shift = <8>; /* 1 MB */
 			qcom,secure-context-bank;
@@ -98,10 +97,9 @@
 
 		secure_bitstream_cb: secure_bitstream_cb {
 			compatible = "qcom,vidc,cb-sec-bitstream";
-			iommus = <&apps_smmu 0x1941 0x0004>;
+			iommus = <&dpd_smmu 0x4A>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal";
-			qcom,iommu-vmid = <0x9>; /* VMID_CP_BITSTREAM */
 			qcom,iova-best-fit;
 			qcom,iova-max-align-shift = <8>; /* 1 MB */
 			qcom,secure-context-bank;
@@ -109,10 +107,9 @@
 
 		secure_pixel_cb: secure_pixel_cb {
 			compatible = "qcom,vidc,cb-sec-pxl";
-			iommus = <&apps_smmu 0x1943 0x0000>;
+			iommus = <&dpd_smmu 0x44>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal";
-			qcom,iommu-vmid = <0xA>; /* VMID_CP_PIXEL */
 			qcom,iova-best-fit;
 			qcom,iova-max-align-shift = <8>; /* 1 MB */
 			qcom,secure-context-bank;
