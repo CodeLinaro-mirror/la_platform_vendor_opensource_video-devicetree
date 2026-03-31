@@ -43,7 +43,7 @@
 		qcom,reg-presets = <0xB0080 0x0 0x03>;
 
 		/* Video Firmware ELF image name */
-		vidc,firmware-name = "venus";
+		vidc,firmware-name = "venus_v6_rsa";
 
 		/* Bus Interconnects */
 		interconnect-names = "venus-cnoc", "venus-ddr";
