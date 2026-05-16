@@ -24,6 +24,7 @@ endif
 
 ifeq ($(CONFIG_ARCH_KERA), y)
 dtbo-y += kera-vidc.dtbo
+dtbo-y += kera-vidc-v2.dtbo
 endif
 
 always-y    := $(dtb-y) $(dtbo-y)
