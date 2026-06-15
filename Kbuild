@@ -54,6 +54,10 @@ ifeq ($(CONFIG_ARCH_RAVELIN), y)
 dtbo-y += ravelin-vidc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_BOURTZI), y)
+dtbo-y += bourtzi-vidc.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_MALABAR), y)
 dtbo-y += malabar-vidc.dtbo
 endif
