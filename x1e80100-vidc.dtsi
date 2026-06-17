@@ -87,7 +87,6 @@
 
 		secure_non_pixel_cb: secure_non_pixel_cb {
 			compatible = "qcom,vidc,cb-sec-non-pxl";
-			iommus = <&dpd_smmu 0xB>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iova-best-fit;
@@ -97,7 +96,6 @@
 
 		secure_bitstream_cb: secure_bitstream_cb {
 			compatible = "qcom,vidc,cb-sec-bitstream";
-			iommus = <&dpd_smmu 0x4A>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iova-best-fit;
@@ -107,7 +105,6 @@
 
 		secure_pixel_cb: secure_pixel_cb {
 			compatible = "qcom,vidc,cb-sec-pxl";
-			iommus = <&dpd_smmu 0x44>;
 			memory-region = <&iommu_region_partition>;
 			qcom,iommu-faults = "non-fatal";
 			qcom,iova-best-fit;
