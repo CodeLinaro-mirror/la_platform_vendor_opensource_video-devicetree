@@ -20,10 +20,10 @@
 		vcodec-supply = <&video_cc_mvs0_gdsc>;
 
 		/* Clocks */
-		clocks = <&clock_gcc GCC_VIDEO_AXI0_CLK>,
-			 <&clock_videocc VIDEO_CC_MVS0C_CLK>,
-			 <&clock_videocc VIDEO_CC_MVS0_CLK>,
-			 <&clock_videocc VIDEO_CC_MVS0_CLK_SRC>;
+		clocks = <&gcc GCC_VIDEO_AXI0_CLK>,
+			 <&videocc VIDEO_CC_MVS0C_CLK>,
+			 <&videocc VIDEO_CC_MVS0_CLK>,
+			 <&videocc VIDEO_CC_MVS0_CLK_SRC>;
 		clock-names =
 			 "gcc_video_axi0",
 			 "core_clk",
@@ -45,8 +45,8 @@
 
 		/* Clock Resets */
 		resets =
-			 <&clock_gcc GCC_VIDEO_AXI0_CLK_ARES>,
-			 <&clock_videocc VIDEO_CC_MVS0C_CLK_ARES>;
+			 <&gcc GCC_VIDEO_AXI0_CLK_ARES>,
+			 <&videocc VIDEO_CC_MVS0C_CLK_ARES>;
 		reset-names =
 			 "video_axi_reset",
 			 "video_core_reset";

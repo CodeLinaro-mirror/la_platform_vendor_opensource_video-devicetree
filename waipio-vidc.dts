@@ -7,9 +7,9 @@
 /plugin/;
 
 #include <dt-bindings/interrupt-controller/arm-gic.h>
-#include <dt-bindings/clock/qcom,gcc-waipio.h>
+#include <dt-bindings/clock/qcom,gcc-sm8450.h>
 #include <dt-bindings/interconnect/qcom,waipio.h>
-#include <dt-bindings/clock/qcom,videocc-waipio.h>
+#include <dt-bindings/clock/qcom,sm8450-videocc.h>
 #include "waipio-vidc.dtsi"
 
 / {
