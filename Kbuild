@@ -3,8 +3,17 @@ ifeq ($(CONFIG_ARCH_WAIPIO), y)
 dtbo-y += waipio-vidc.dtbo
 endif
 
+ifeq ($(CONFIG_ARCH_MAHUA), y)
+dtbo-y += mahua-vidc.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_X1E80100), y)
-dtbo-y += x1e80100-vidc.dtbo
+ifeq ($(TARGET_BOARD_PLATFORM),hamoa)
+dtbo-y += x1e80100-al-vidc.dtbo
+endif
+ifeq ($(TARGET_BOARD_PLATFORM),hamoa_la)
+dtbo-y += x1e80100-la-vidc.dtbo
+endif
 endif
 
 ifeq ($(CONFIG_ARCH_KALAMA), y)

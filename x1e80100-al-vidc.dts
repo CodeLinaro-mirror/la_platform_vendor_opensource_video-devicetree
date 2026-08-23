@@ -18,3 +18,18 @@
 	qcom,msm-id = <555 0x10000>, <555 0x20000>;
 	qcom,board-id = <0 0>;
 };
+
+&secure_non_pixel_cb {
+	compatible = "qcom,vidc,cb-sec-non-pxl";
+	iommus = <&dpd_smmu 0xB>;
+};
+
+&secure_bitstream_cb {
+	compatible = "qcom,vidc,cb-sec-bitstream";
+	iommus = <&dpd_smmu 0x4A>;
+};
+
+&secure_pixel_cb {
+	compatible = "qcom,vidc,cb-sec-pxl";
+	iommus = <&dpd_smmu 0x44>;
+};
