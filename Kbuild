@@ -16,6 +16,10 @@ dtbo-y += x1e80100-la-vidc.dtbo
 endif
 endif
 
+ifeq ($(CONFIG_ARCH_X1P42100), y)
+dtbo-y += x1p42100-vidc.dtbo
+endif
+
 ifeq ($(CONFIG_ARCH_KALAMA), y)
 dtbo-y += kalama-vidc.dtbo
 dtbo-y += kalama-vidc-v2.dtbo
